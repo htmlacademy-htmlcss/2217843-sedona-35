@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alena Shuvaeva](https://up.htmlacademy.ru/htmlcss/35/user/2217843).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Позняк] (https://htmlacademy.ru/profile/id907403).
 
 ---
 
