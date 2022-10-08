@@ -9,7 +9,8 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <div class="page-wrapper">
+     <header class="page-header">
       <a class="page-header-logo-link">
         <img class="page-header-logo" src="images/svg/sedona-logo.svg" width="140" height="70"
           alt="Логотип сайта городка Седона.">
@@ -27,7 +28,7 @@
           </li>
         </ul>
       </nav>
-
+      <div class="user-menu">
       <a class="user-menu-link" href="#">
         <span class="visually-hidden">Поиск.</span>
       </a>
@@ -35,87 +36,86 @@
         <span class="visually-hidden">Сохранённые гостиницы.<span class="visually-hidden">12</span></span>
       </a>
       <a class="user-menu-link button" href="#">Хочу сюда!</a>
+      </div>
 
     </header>
 
-    <main class="main-index">
+     <main class="main-index">
       <h1 class="visually-hidden">Городок Седона.</h1>
 
-      <section class="intro">
-        <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <img src="images/svg/welcome.svg" width="458" height="352"
-          alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
-        <div class="divider">
-        </div>
-      </section>
+       <section class="intro">
+         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
+         <img class="intro-image" src="images/svg/welcome.svg" width="458" height="352"
+              alt="Welcome to the gorgeous Sedona! «Because the Grand Canyon sucks!»">
+       </section>
 
-      <section class="reasons">
-        <h2 class="reasons-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="reasons-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        <div class="reasons-card">
-          <div class="reasons-card-content">
-            <h3>Настоящий городок</h3>
-            <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </div>
-          <img src="images/content/index/real-town.jpg" width="800" height="384" alt="Вид на город.">
-        </div>
-        <ul class="reasons-list">
-          <li class="reasons-item">
-            <h3>Небольшая площадь</h3>
-            <p class="reasons-description">Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="reasons-item">
-            <h3>Красивая дорога</h3>
-            <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="reasons-item">
-            <h3>Мало туристов</h3>
-            <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-        </ul>
-        <div class="reasons-card">
-          <img src="images/content/index/devil-bridge.jpg" width="800" height="384" alt="Вид на мост дьявола.">
-          <div class="reasons-card-content">
-            <h3>Там есть мост дьявола</h3>
-            <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          </div>
-        </div>
-        <ul class="reasons-list">
-          <li class="reasons-item">
-            <h3>Жильё</h3>
-            <p class="reasons-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li class="reasons-item">
-            <h3>Еда</h3>
-            <p class="reasons-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="reasons-item">
-            <h3>Сувениры</h3>
-            <p class="reasons-description">Не только китайского, но и настоящего местного производства!</p>
-          </li>
-        </ul>
-      </section>
+       <section class="reasons">
+         <h2 class="reasons-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+         <p class="reasons-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+         <div class="reasons-card">
+           <div class="reasons-card-content">
+             <h3 class="reasons-description-title">Настоящий городок</h3>
+             <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+           </div>
+           <img src="images/content/index/real-town.jpg" width="800" height="384" alt="Вид на город.">
+         </div>
+         <ul class="reasons-list advantages-list">
+           <li class="reasons-item">
+             <h3 class="reasons-description-title">Небольшая площадь</h3>
+             <p class="reasons-description">Все достопримечательности находятся очень близко</p>
+           </li>
+           <li class="reasons-item">
+             <h3 class="reasons-description-title">Красивая дорога</h3>
+             <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+           </li>
+           <li class="reasons-item">
+             <h3 class="reasons-description-title">Мало туристов</h3>
+             <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
+           </li>
+         </ul>
+         <div class="reasons-card">
+           <img src="images/content/index/devil-bridge.jpg" width="800" height="384" alt="Вид на мост дьявола.">
+           <div class="reasons-card-content">
+             <h3 class="reasons-description-title">Там есть мост дьявола</h3>
+             <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+           </div>
+         </div>
+         <ul class="reasons-list recommendations-list">
+           <li class="reasons-item">
+             <h3 class="reasons-description-title">Жильё</h3>
+             <p class="reasons-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+           </li>
+           <li class="reasons-item">
+             <h3 class="reasons-description-title">Еда</h3>
+             <p class="reasons-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+           </li>
+           <li class="reasons-item">
+             <h3 class="reasons-description-title">Сувениры</h3>
+             <p class="reasons-description">Не только китайского, но и настоящего местного производства!</p>
+           </li>
+         </ul>
+       </section>
 
-      <section class="interested">
-        <h2 class="interested-title">Заинтересовались?</h2>
-        <p class="interested-subtitle">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц
-          в Седоне</p>
-        <a class="interested-link button-large" href="#">Поиск гостиницы в Седоне</a>
-      </section>
+       <section class="interested">
+         <h2 class="interested-title">Заинтересовались?</h2>
+         <p class="interested-subtitle">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц
+           в Седоне</p>
+         <a class="interested-link button-large" href="#">Поиск гостиницы в Седоне</a>
+       </section>
 
-      <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input aria-label="Email" class="field" type="email" name="subscription-email" placeholder="Ваш e-mail"
-            required>
-          <button class="subscribe-button button-large" type="submit">Подписаться</button>
-        </form>
-      </section>
+       <section class="subscribe">
+         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+         <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+           <input aria-label="Email" class="email-field" type="email" name="subscription-email" placeholder="Ваш e-mail"
+                  required>
+           <button class="subscribe-button button-large" type="submit">Подписаться</button>
+         </form>
+       </section>
 
     </main>
 
-    <footer class="page-footer">
+     <footer class="page-footer">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="icon-button" href="https://vk.com/htmlacademy">
@@ -149,6 +149,7 @@
         </svg>
       </a>
     </footer>
+    </div>
   </body>
 
 </html>
