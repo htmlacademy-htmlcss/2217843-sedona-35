@@ -76,8 +76,8 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
   border-width: 0;
-  height: 36px;
-  padding: 0;
+  min-height: 36px;
+  padding: 8px 18px;
 }
 
 .button-large {
@@ -137,13 +137,17 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 20px 16px;
+  padding: 20px 0;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-align: left;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation-item {
+  margin: 0 16px;
 }
 
 .user-menu {
@@ -153,17 +157,15 @@ body {
   margin-left: auto;
 }
 
-.user-menu-link {
+.search,
+.favorites {
   min-width: 20px;
   min-height: 20px;
 }
 
 .user-menu-link.button {
-  display: block;
   width: 160px;
-  height: 36px;
-  padding: 8px 34px;
-  margin: auto 0;
+  margin: 14px 0;
 }
 
 .main-index {
@@ -179,7 +181,6 @@ body {
   text-align: center;
   padding: 51px 50px 82px 50px;
   position: relative;
-  margin-bottom: 69px;
 }
 
 .intro::before {
@@ -200,6 +201,7 @@ body {
 
 .reasons {
   text-align: center;
+  padding-top: 69px;
 }
 
 .reasons-title {
@@ -225,6 +227,7 @@ body {
 
 .reasons-card-content {
   width: 400px;
+  padding: 92px 85px 111px;
 }
 
 .reasons-description-title {
@@ -234,21 +237,13 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+
 }
 
 .reasons-description {
-  width: 230px;
-  margin: 0 auto;
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
-}
-
-.reasons-card-content .reasons-description-title {
-  margin-top: 92px;
-}
-
-.reasons-card-content .reasons-description {
-  margin-bottom: 111px;
 }
 
 .reasons-list {
@@ -264,16 +259,16 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-list .reasons-description-title {
-  margin-top: 103px;
-}
-
-.advantages-list .reasons-description {
-  margin-bottom: 121px;
+.advantages-list .reasons-item {
+  padding: 103px 85px 121px;
 }
 
 .advantages-list .reasons-item:nth-child(even) {
   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.recommendations-list .reasons-item {
+  padding: 80px 85px 81px;
 }
 
 .recommendations-list .reasons-item:nth-child(even) {
@@ -285,24 +280,16 @@ body {
 }
 
 .recommendations-list .reasons-description-title {
-  margin: 182px auto 30px;
-}
-
-.recommendations-list .reasons-description {
-  margin-bottom: 81px;
-}
-
-.recommendations-list {
-  margin-bottom: 96px;
+  margin: 0 auto 30px;
 }
 
 .interested {
   text-align: center;
+  padding: 96px 304px;
 }
 
 .interested-title {
-  width: 297px;
-  margin: 0 auto 20px;
+  margin: 0 0 20px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -310,14 +297,13 @@ body {
 }
 
 .interested-subtitle {
-  width: 592px;
-  margin: 0 auto 54px;
+  margin: 0;
   color: #333333;
 }
 
 .interested-link {
   width: 376px;
-  margin: 0 auto 96px;
+  margin: 54px auto 0;
 }
 
 .subscribe {
@@ -327,12 +313,11 @@ body {
   background-size: cover;
   color: #ffffff;
   text-align: center;
-  padding: 96px 50px 104px 50px;
+  padding: 96px 258px 104px;
 }
 
 .subscribe-title {
-  width: 404px;
-  margin: 0 auto 20px;
+  margin: 0 0 20px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -340,13 +325,11 @@ body {
 }
 
 .subscribe-subtitle {
-  width: 475px;
-  margin: 0 auto 54px;
+  margin: 0 104px;
 }
 
 .subscribe-form {
-  width: 684px;
-  margin: 0 auto;
+  margin-top: 54px;
   display: flex;
 }
 
@@ -391,8 +374,8 @@ body {
 }
 
 .footer-social-item {
-  width: 47px;
-  height: 40px;
+  min-width: 47px;
+  min-height: 40px;
 }
 
 .footer-phone-number {
@@ -422,7 +405,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-  margin-bottom: 50px;
 }
 
 .inner-header-title {
@@ -559,15 +541,14 @@ body {
 }
 
 .catalog-sort {
-  width: 1060px;
-  margin: 0 auto 40px;
+  padding: 50px 70px 40px;
   display: flex;
   align-items: center;
 }
 
 .hotels-found {
   min-width: 338px;
-  margin: 0 auto 0 0;
+  margin: 0 70px 0 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -578,7 +559,7 @@ body {
 .select-control {
   width: 292px;
   height: 49px;
-  margin-right: 70px;
+  margin: 0 70px 0 auto;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -615,8 +596,7 @@ body {
 }
 
 .catalog-list {
-  width: 1060px;
-  margin: 0 auto;
+  padding: 0 70px 60px;
 }
 
 .hotel-list {
@@ -693,7 +673,7 @@ body {
 }
 
 .pagination {
-  margin: 0 0 60px;
+  margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -746,7 +726,7 @@ body {
 
 .subscribe-catalog {
   text-align: center;
-  padding: 96px 50px 104px 50px;
+  padding: 96px 258px 104px;
 }
 
 .subscribe-catalog .subscribe-subtitle {
