@@ -394,6 +394,7 @@ body {
 
 .recommendations-list .reasons-item {
   padding: 182px 85px 81px;
+  position: relative;
 }
 
 .recommendations-list .reasons-item:nth-child(even) {
@@ -406,7 +407,6 @@ body {
 
 .recommendations-list .reasons-description-title {
   margin: 0 auto 30px;
-  position: relative;
 }
 
 .advantages-list .reasons-description-title::before {
@@ -433,39 +433,39 @@ body {
   content: "";
   position: absolute;
   left: 50%;
-  margin-left: -37px;
-  top: -102px;
+  transform: translateX(-50%);
+  top: 80px;
   width: 75px;
   height: 72px;
   background-image: url("../images/svg/housing.svg");
   background-repeat: no-repeat;
-  background-size: 75px 72px;
+  background-size: contain;
 }
 
 .eating::before {
   content: "";
   position: absolute;
   left: 50%;
-  margin-left: -37px;
-  top: -101px;
+  transform: translateX(-50%);
+  top: 81px;
   width: 74px;
   height: 70px;
   background-image: url("../images/svg/eating.svg");
   background-repeat: no-repeat;
-  background-size: 74px 70px;
+  background-size: contain;
 }
 
 .souvenir::before {
   content: "";
   position: absolute;
   left: 50%;
-  margin-left: -32px;
-  top: -104px;
+  transform: translateX(-50%);
+  top: 78px;
   width: 64px;
   height: 76px;
   background-image: url("../images/svg/souvenir.svg");
   background-repeat: no-repeat;
-  background-size: 64px 76px;
+  background-size: contain;
 }
 
 .interested {
@@ -676,7 +676,7 @@ body {
   height: 10px;
   background-image: url("../images/svg/breadcrumbs.svg");
   background-repeat: no-repeat;
-  background-size: 7px 10px;
+  background-size: contain;
   content: "";
 }
 
@@ -1005,25 +1005,32 @@ body {
 }
 
 .hotel-card-stars {
-  height: 37px;
-  background-repeat: no-repeat;
-  background-size: 18px 17px;
+  height: 17px;
+  align-self: center;
+  background-repeat: space repeat;
+  background-size: 19px 17px;
   pointer-events: none;
+  background-image: url("../images/svg/star.svg");
+}
+
+.five-stars {
+  width: 119px;
 }
 
 .four-stars {
-  background-image: url("../images/svg/star.svg"), url("../images/svg/star.svg"), url("../images/svg/star.svg"), url("../images/svg/star.svg");
-  background-position: left center, 24px center, 48px center, 72px center;
+  width: 94px;
 }
 
 .three-stars {
-  background-image: url("../images/svg/star.svg"), url("../images/svg/star.svg"), url("../images/svg/star.svg");
-  background-position: left center, 24px center, 48px center;
+ width: 69px;
 }
 
 .two-stars {
-  background-image: url("../images/svg/star.svg"), url("../images/svg/star.svg");
-  background-position: left center, 24px center;
+  width: 44px;
+}
+
+.one-star {
+  width: 19px;
 }
 
 .hotel-card-rating {
@@ -1035,6 +1042,7 @@ body {
   line-height: 20px;
   font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
   border-radius: 4px;
   padding: 9px 22px 8px 23px;
 }
