@@ -170,7 +170,9 @@ body {
   outline-offset: 0;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .button:focus {
     outline: 3px solid #83b3d3;
     outline-offset: 0;
@@ -182,7 +184,9 @@ body {
   outline-offset: 0;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .button-large:focus {
     outline: 3px solid #83b3d3;
     outline-offset: 0;
@@ -205,7 +209,9 @@ body {
   outline: 3px solid #82b3d3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .page-header-logo-link:focus {
     outline: 3px solid #83b3d3;
   }
@@ -252,7 +258,9 @@ body {
   outline: 3px solid #82b3d3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .navigation-link:focus {
     outline: 3px solid #83b3d3;
   }
@@ -274,7 +282,9 @@ body {
   outline: 3px solid #82b3d3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .user-menu-link:focus {
     outline: 3px solid #83b3d3;
   }
@@ -578,7 +588,9 @@ body {
   outline: 3px solid #82b3d3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .email-field:focus {
     outline: 3px solid #83b3d3;
   }
@@ -619,7 +631,9 @@ body {
   outline: 3px solid #82b3d3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .icon-button:focus {
     outline: 3px solid #83b3d3;
   }
@@ -667,7 +681,9 @@ body {
   outline: 3px solid #82b3d3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .footer-phone-number:focus {
     outline: 3px solid #83b3d3;
   }
@@ -703,7 +719,9 @@ body {
   outline: 3px solid #82b3d3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .footer-copyright-link:focus {
     outline: 3px solid #83b3d3;
   }
@@ -713,15 +731,15 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 2;
 }
 
-.modal-container-close {
-  display: none;
+.modal-container.is-open {
+  display: flex;
 }
 
 .modal {
@@ -775,7 +793,9 @@ body {
   outline: 3px solid #83b3d3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .modal-close-button:focus {
     outline: 3px solid #83b3d3;
   }
@@ -800,7 +820,10 @@ body {
 
 .search-form {
   display: grid;
-  grid-template-columns: 137px auto min-content 157px;
+  grid-template-columns: 91px 110px auto 111px;
+  grid-row-gap: 48px;
+  grid-column-gap: 46px;
+
 }
 
 .field {
@@ -819,8 +842,19 @@ body {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.search-form-date {
+  grid-column: 1 / -1;
+  display: flex;
+  position: relative;
+}
+
+.search-form-date .form-label {
+  width: 137px;
+  padding: 12px 18px 12px 0;
+}
+
 .field[type="text"] {
-  grid-column: 2 / -1;
+  width: 440px;
   padding: 12px 60px 12px 20px;
   background-image: url("../images/svg/date.svg");
   background-repeat: no-repeat;
@@ -840,7 +874,9 @@ body {
   outline: 3px solid #83b3d3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .field[type="text"]:focus {
     outline: 3px solid #83b3d3;
   }
@@ -854,34 +890,38 @@ body {
   outline: none;
 }
 
-.form-info {
-  grid-column: 2 / -1;
-  min-height: 48px;
-  padding: 4px 20px 23px 20px;
-}
-
 .form-explain {
+  position: absolute;
+  bottom: -25px;
+  left: 157px;
+  padding: 0;
   margin: 0;
   font-size: 16px;
   line-height: 21px;
   text-align: left;
   color: #333333;
+  display: none;
 }
 
 .form-error {
+  position: absolute;
+  bottom: -25px;
+  left: 157px;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
   color: #FF5757;
+  display: none;
 }
 
-.buttons-wrapper:nth-last-of-type(2) {
-  grid-column: 2 / 3;
-  justify-self: start;
-  min-width: 110px;
+.search-form-date.is-valid .form-explain {
+  display: block;
 }
 
-.buttons-wrapper:last-of-type {
-  grid-column: 4 / 5;
-  justify-self: end;
-  min-width: 111px;
+.search-form-date.has-error .form-error {
+  display: block;
 }
 
 .buttons-wrapper {
@@ -930,7 +970,9 @@ body {
   outline: 3px solid #82b3d3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .search-form-button:focus {
     outline: 3px solid #83b3d3;
   }
@@ -961,7 +1003,9 @@ body {
   outline: 3px solid #82b3d3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .field[type="number"]:focus {
     outline: 3px solid #83b3d3;
   }
@@ -969,14 +1013,13 @@ body {
 
 .search-form-submit {
   grid-column: 1 / -1;
-  margin-top: 48px;
   padding: 18px 77px;
   border-radius: 10px;
   line-height: 24px;
 }
 
 .form-label {
-  padding: 12px 18px 12px 0;
+  padding: 12px 0;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -985,11 +1028,13 @@ body {
 
 .form-label-icon {
   position: relative;
-  padding-right: 36px;
+  justify-self: end;
+  padding-right: 26px;
+
 }
 
 .label-with-tooltip {
-  padding-right: 0;
+  padding-right: 10px;
 }
 
 .tooltip {
@@ -1062,7 +1107,9 @@ body {
   outline: none;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .tooltip-toggle:focus {
     outline: none;
   }
@@ -1145,7 +1192,9 @@ body {
   outline: 3px solid #82b3d3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .breadcrumbs-link:not(.breadcrumbs-current-link):focus {
     outline: 3px solid #83b3d3;
   }
@@ -1223,6 +1272,7 @@ body {
   position: relative;
   display: block;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -1252,7 +1302,9 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .control-mark:focus {
     outline: 3px solid #83b3d3;
   }
@@ -1343,9 +1395,23 @@ body {
   outline: 3px solid #83b3d3;
 }
 
+.input-price:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
+@supports not selector(:focus-visible
+
+) {
+  .input-price:focus {
+    outline: 3px solid #83b3d3;
+  }
+}
+
+
 .input-price:active {
   background-color: #F2F2F2;
   border: 2px solid #000000;
+  padding: 10px 18px;
 }
 
 .price-from {
@@ -1404,7 +1470,8 @@ body {
 }
 
 .catalog-filter-buttons {
-  align-self: end;
+  padding-top: 56px;
+  align-self: start;
 }
 
 .catalog-button-submit {
@@ -1423,7 +1490,7 @@ body {
 .catalog-sort {
   padding: 50px 70px 40px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hotels-found {
@@ -1440,7 +1507,6 @@ body {
   position: relative;
   width: 292px;
   margin: 0 70px 0 auto;
-  align-self: flex-start;
 }
 
 .select-control {
@@ -1470,7 +1536,9 @@ body {
   border-color: #68A2CA;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .select-control:focus {
     border-color: #68A2CA;
   }
@@ -1517,7 +1585,9 @@ body {
   border-color: #68A2CA;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .view-button:focus {
     border-color: #68A2CA;
   }
@@ -1576,7 +1646,9 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .hotel-card-title-link:focus {
     outline: 3px solid #83b3d3;
   }
@@ -1662,7 +1734,9 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 60px);
+  gap: 8px;
 }
 
 .pagination-item {
@@ -1675,28 +1749,26 @@ body {
   border-radius: 4px;
 }
 
-.pagination-item:not(.pagination-current-item, .pagination-item-space):hover {
+.pagination-item:hover {
   background-color: #68A2CA;
 }
 
-.pagination-item:not(.pagination-current-item, .pagination-item-space):focus {
+.pagination-item:focus {
   background-color: #68A2CA;
 }
 
-.pagination-item:not(.pagination-current-item, .pagination-item-space):active {
+.pagination-item:active {
   background-color: #82b3d3;
 }
 
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.pagination-current-item {
+.pagination-item-current {
   background-color: #f2f2f2;
+  pointer-events: none;
 }
 
 .pagination-item-space {
   background-color: #ffffff;
+  pointer-events: none;
 }
 
 .pagination-link {
@@ -1716,17 +1788,19 @@ body {
   outline: none;
 }
 
-@supports not selector(:focus-visible) {
+@supports not selector(:focus-visible
+
+) {
   .hotel-card-title-link:focus {
     outline: none;
   }
 }
 
-.pagination-link:not(.pagination-current-link, .pagination-space):active {
+.pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.pagination-current-link {
+.pagination-link-current {
   color: #000000;
 }
 

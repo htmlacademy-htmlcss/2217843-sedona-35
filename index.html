@@ -166,7 +166,7 @@
       </svg>
     </a>
   </footer>
-
+  <!-- Для открытия модального окна на div.modal-container нужно добавить класс .is-open -->
   <div class="modal-container">
     <div class="modal modal-search">
       <button class="modal-close-button">
@@ -175,19 +175,27 @@
       </button>
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-          <label class="form-label" for="check-in-date">Дата Заезда:
-          </label>
-          <input class="field" type="text" id="check-in-date" name="check-in-date" placeholder="Укажите дату"
-                 value="27 апреля 2020">
-          <div class="form-info">
-            <p class="form-explain form-error">Мы не можем отправить вас в прошлое.</p>
+          <!-- Для показа сообщения об ошибке на div.search-form-date необходимо добавить класс .has-error -->
+          <!-- Для показа сообщения о том, что введенные данные корректны, на div.search-form-date необходимо добавить класс .is-valid -->
+          <div class="search-form-date">
+            <label class="form-label" for="check-in-date">Дата Заезда:
+            </label>
+            <input class="field" type="text" id="check-in-date" name="check-in-date" placeholder="Укажите дату"
+                   value="27 апреля 2020">
+            <p class="form-error">Мы не можем отправить вас в прошлое.</p>
+            <p class="form-explain">На эти даты есть свободные номера. Пока есть.</p>
           </div>
-          <label class="form-label" for="check-out-date">Дата Выезда:
-          </label>
-          <input class="field" type="text" id="check-out-date" name="check-out-date" placeholder="Укажите дату"
-                 value="1 сентября 2023">
-          <div class="form-info">
+          <!-- Для показа сообщения об ошибке на div.search-form-date необходимо добавить класс .has-error -->
+          <!-- Для показа сообщения о том, что введенные данные корректны, на div.search-form-date необходимо добавить класс .is-valid -->
+          <div class="search-form-date">
+            <label class="form-label" for="check-out-date">Дата Выезда:
+            </label>
+            <input class="field" type="text" id="check-out-date" name="check-out-date" placeholder="Укажите дату"
+                   value="1 сентября 2023">
+            <p class="form-error">Мы не можем отправить вас в прошлое.</p>
             <p class="form-explain">На эти даты есть свободные номера. Пока есть.</p>
           </div>
           <label class="form-label" for="adults">Взрослые:
