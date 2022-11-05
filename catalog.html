@@ -16,6 +16,7 @@
     <a class="page-header-logo-link" href="index.html">
       <img class="page-header-logo" src="images/svg/sedona-logo.svg" width="140" height="70"
            alt="Логотип сайта городка Седона.">
+      <span class="visually-hidden">Переход на главную страницу.</span>
     </a>
     <nav class="navigation">
       <ul class="navigation-list">
@@ -71,24 +72,23 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="pool" checked tabindex="-1">
-                <span class="control-mark" tabindex="0"></span>
+                <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="pool" checked>
+                <span class="control-mark"></span>
                 <span class="control-label">Бассейн</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="parking"
-                       checked tabindex="-1">
-                <span class="control-mark" tabindex="0"></span>
+                       checked>
+                <span class="control-mark"></span>
                 <span class="control-label">Парковка</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="wi-fi"
-                       tabindex="-1">
-                <span class="control-mark" tabindex="0"></span>
+                <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="wi-fi">
+                <span class="control-mark"></span>
                 <span class="control-label">Wi-Fi</span>
               </label>
             </li>
@@ -100,24 +100,22 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="radio" name="hotel-type" value="inn" checked
-                       tabindex="-1">
-                <span class="control-mark" tabindex="0"></span>
+                <input class="visually-hidden control-input" type="radio" name="hotel-type" value="inn" checked>
+                <span class="control-mark"></span>
                 <span class="control-label">Гостиница</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="radio" name="hotel-type" value="motel" tabindex="-1">
-                <span class="control-mark" tabindex="0"></span>
+                <input class="visually-hidden control-input" type="radio" name="hotel-type" value="motel">
+                <span class="control-mark"></span>
                 <span class="control-label">Мотель</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="radio" name="hotel-type" value="apartments"
-                       tabindex="-1">
-                <span class="control-mark" tabindex="0"></span>
+                <input class="visually-hidden control-input" type="radio" name="hotel-type" value="apartments">
+                <span class="control-mark"></span>
                 <span class="control-label">Апартаменты</span>
               </label>
             </li>
@@ -197,7 +195,8 @@
         <li class="hotel-card">
           <a class="hotel-card-image-link" href="#">
             <img class="hotel-card-image" src="images/content/catalog/hotel-amara-resort-and-spa.jpg" width="300"
-                 height="212" alt="Гостиница Amara Resort & Spa.">
+                 height="212" alt="Вид из окна гостиницы: звёздное небо между скал.">
+            <span class="visually-hidden">Переход на страницу гостиницы Amara Resort & Spa.</span>
           </a>
           <a class="hotel-card-title-link" href="#">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -215,8 +214,8 @@
         <li class="hotel-card">
           <a class="hotel-card-image-link" href="#">
             <img class="hotel-card-image" src="images/content/catalog/hotel-villas-at-poco-diablo.jpg" width="300"
-                 height="212"
-                 alt="Гостиница Villas at Poco Diablo.">
+                 height="212" alt="Вид из окна гостиницы на горы.">
+            <span class="visually-hidden">Переход на страницу гостиницы Villas at Poco Diablo.</span>
           </a>
           <a class="hotel-card-title-link" href="#">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -234,7 +233,8 @@
         <li class="hotel-card">
           <a class="hotel-card-image-link" href="#">
             <img class="hotel-card-image" src="images/content/catalog/hotel-desert-quail-inn.jpg" width="300"
-                 height="212" alt="Гостиница Desert Quail Inn.">
+                 height="212" alt="Вид из окна гостиницы на красные скалы Аризоны.">
+            <span class="visually-hidden">Переход на страницу гостиницы Desert Quail Inn.</span>
           </a>
           <a class="hotel-card-title-link" href="#">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -252,7 +252,8 @@
         <li class="hotel-card">
           <a class="hotel-card-image-link" href="#">
             <img class="hotel-card-image" src="images/content/catalog/hotel-greentree-inn.jpg" width="300"
-                 height="212" alt="Гостиница GreenTree Inn.">
+                 height="212" alt="Вид из окна гостиницы: панорама ночного неба в Седоне.">
+            <span class="visually-hidden">Переход на страницу гостиницы GreenTree Inn.</span>
           </a>
           <a class="hotel-card-title-link" href="#">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -294,8 +295,7 @@
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input aria-label="Email" class="email-field" type="email" name="subscription-email" placeholder="Ваш e-mail"
-               required>
+        <input class="email-field" type="email" name="subscription-email" placeholder="Ваш e-mail" aria-label="Введите ваш e-mail." required>
         <button class="subscribe-button button-large button-blue" type="submit">Подписаться</button>
       </form>
     </section>
